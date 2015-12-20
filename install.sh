@@ -8,9 +8,9 @@ echo "Installing dofiles!"
   git clone -q git@github.com:ta/dotfiles.git && \
   cd dotfiles && \
   rm -rf /tmp/dotfiles/.git /tmp/dotfiles/install.sh
-  for X in `ls -A`
+  for X in `ls -Ap`
   do
-	  mv -v $X ~/$X
+	  cp -v -R $X ~/$X
   done
   rm -rf /tmp/dotfiles ) && \
 echo "Done!"
