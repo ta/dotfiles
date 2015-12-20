@@ -2,7 +2,7 @@
 
 # Usage: curl -s https://raw.githubusercontent.com/ta/dotfiles/master/install.sh | sh
 
-echo "Installing dofiles!"
+echo "Installing dotfiles!"
 
 ( cd /tmp && \
   git clone -q git@github.com:ta/dotfiles.git && \
