@@ -10,8 +10,7 @@ echo "Installing dofiles!"
   rm -rf /tmp/dotfiles/.git /tmp/dotfiles/install.sh
   for X in `ls -A`
   do
-	  echo "$X"
-	  mv $X ~/
+	  mv -v $X ~/$X
   done
   rm -rf /tmp/dotfiles ) && \
 echo "Done!"
