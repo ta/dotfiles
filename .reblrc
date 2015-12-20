@@ -1,0 +1,17 @@
+def enable_activerecord_stdout_log
+  defined?(ActiveRecord::Base) && ActiveRecord::Base.logger = Logger.new(STDOUT)
+end
+
+def disable_activerecord_stdout_log
+  defined?(ActiveRecord::Base) && ActiveRecord::Base.logger = nil
+end
+
+def dump(obj)
+  fail "#{obj.class} does not respond to #to_json" unless obj.respond_to? "to_json"
+
+  JSON.pretty_generate(JSON.parse(obj.to_json))
+end
+
+def pastie(obj)
+  `echo '#{dump(obj)}' | pastie`.strip
+end

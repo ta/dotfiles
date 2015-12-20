@@ -1,0 +1,17 @@
+[user]
+	email = tonni@toelboell-lund.dk
+	name = Tonni Tølbøll Lund Aagesen
+[alias]
+        ci = commit
+	co = checkout
+	wc = whatchanged
+	outgoing = log origin/master..HEAD -- | less
+	incoming = !git fetch && git log HEAD..origin/master -- | less
+	rdiff = !git fetch && git log --graph --boundary --left-right --cherry-pick HEAD...FETCH_HEAD -- | less
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[color]
+	diff = true
+[push]
+	default = matching
