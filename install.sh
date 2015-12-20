@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Usage: curl -s https://github.com/ta/dotfiles/blob/master/install.sh | sh
+# Usage: curl -s https://raw.githubusercontent.com/ta/dotfiles/master/install.sh | sh
 
 echo "Installing dofiles!"
 
