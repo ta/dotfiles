@@ -10,7 +10,7 @@ echo "Installing dotfiles!"
   rm -rf /tmp/dotfiles/.git /tmp/dotfiles/install.sh
   for X in `ls -Ap`
   do
-	  cp -v -R $X ~/$X
+	  rsync -av "`pwd`/$X" "$HOME/$X"
   done
   rm -rf /tmp/dotfiles ) && \
 echo "Done!"
