@@ -2,7 +2,7 @@
 	email = tonni@toelboell-lund.dk
 	name = Tonni Tølbøll Lund Aagesen
 [alias]
-        ci = commit
+  ci = commit
 	co = checkout
 	wc = whatchanged
 	outgoing = log origin/master..HEAD -- | less
@@ -15,3 +15,5 @@
 	diff = true
 [push]
 	default = matching
+[core]
+  editor = $(which vim) || editor
