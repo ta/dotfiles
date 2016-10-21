@@ -16,4 +16,4 @@
 [push]
 	default = matching
 [core]
-  editor = $(which vim) || editor
+  editor = $(which vim)
