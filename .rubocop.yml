@@ -1,9 +1,17 @@
+AllCops:
+  TargetRubyVersion: 2.3
 
-StringLiterals:
-  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
 
 LineLength:
-  Enabled: false
+  Max: 119 # github diff (ex. +-)
 
 Documentation:
   Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 30
