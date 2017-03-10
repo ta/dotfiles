@@ -6,7 +6,7 @@ echo "Installing dotfiles!\n"
 
 ( cd /tmp && \
   GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" \
-  git clone -q git@github.com:ta/dotfiles.git && \
+  git clone -q https://github.com/ta/dotfiles.git && \
   cd dotfiles && \
   rm -rf /tmp/dotfiles/.git /tmp/dotfiles/install.sh && \
   for X in `ls -Ap`
