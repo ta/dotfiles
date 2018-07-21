@@ -1,10 +1,11 @@
 # directory ignores
 --ignore-dir=.git
---ignore-dir=.svn
 --ignore-dir=.idea
+--ignore-dir=.svn
+--ignore-dir=coverage
+--ignore-dir=gems
 --ignore-dir=vendor/bundle
 --ignore-dir=tmp
---ignore-dir=gems
 
 # add filetypes that ack normally ignores
 --type-set=sass=.sass,.scss
