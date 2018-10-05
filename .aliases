@@ -1,0 +1,14 @@
+# Shortcuts
+alias e=editor
+
+# Common typos
+alias pgp=gpg
+
+# Outputs formatted json
+alias prettyjson="python -m json.tool"
+
+# Trim new lines and copy to clipboard
+alias c="tr -d '\n' | pbcopy"
+
+# URL-encode strings
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
