@@ -1,6 +1,7 @@
 [user]
   email = tonni@toelboell-lund.dk
   name = Tonni Tølbøll Lund Aagesen
+  signingkey = 3356042A6818A1D5
 [alias]
   ci = commit
   co = checkout
@@ -17,3 +18,5 @@
   default = matching
 [core]
   editor = $(which vim)
+[commit]
+  gpgsign = true
