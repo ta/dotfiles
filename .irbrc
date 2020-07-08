@@ -17,7 +17,7 @@ IRB.conf[:ENCODING] = "UTF-8:UTF-8"
 
 # Save History between irb sessions
 IRB.conf[:SAVE_HISTORY] = 5000
-IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
+IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.rebl_history"
 
 # Load the readline module.
 IRB.conf[:USE_READLINE] = true
