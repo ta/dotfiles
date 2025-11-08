@@ -1,11 +1,22 @@
-# Shortcuts
-alias e=editor
+## Shortcuts
 
-# Common typos
+alias e=editor
+alias pod="podman"
+
+## Common typos
+
 alias pgp=gpg
+alias docker="podman"
+
+## Default params
+
+alias mc="mc --nosubshell"
+alias less="/opt/homebrew/bin/less -S"
+
+## Tools
 
 # Outputs formatted json
-alias prettyjson="python -m json.tool"
+alias pp.json="python3 -m json.tool"
 
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
