@@ -20,3 +20,5 @@
   editor = $(which vim)
 [commit]
   gpgsign = true
+[pull]
+  rebase = false

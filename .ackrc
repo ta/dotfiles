@@ -9,6 +9,7 @@
 
 # add filetypes that ack normally ignores
 --type-set=sass=.sass,.scss
+--type-set=vuejs=.vue
 
 # sort results by filename
 --sort-files
